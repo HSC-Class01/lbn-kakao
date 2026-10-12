@@ -1,0 +1,133 @@
+{
+  "revenue": {
+    "ids": [
+      "ifrs-full_Revenue",
+      "ifrs_Revenue"
+    ],
+    "names": [
+      "매출액",
+      "영업수익",
+      "수익(매출액)"
+    ],
+    "statement": "IS"
+  },
+  "operating_profit": {
+    "ids": [
+      "dart_OperatingIncomeLoss"
+    ],
+    "names": [
+      "영업이익",
+      "영업이익(손실)",
+      "영업손익"
+    ],
+    "statement": "IS"
+  },
+  "net_income": {
+    "ids": [
+      "ifrs-full_ProfitLoss",
+      "ifrs_ProfitLoss"
+    ],
+    "names": [
+      "당기순이익",
+      "당기순이익(손실)",
+      "분기순이익",
+      "반기순이익",
+      "당기순손익"
+    ],
+    "statement": "IS"
+  },
+  "assets": {
+    "ids": [
+      "ifrs-full_Assets",
+      "ifrs_Assets"
+    ],
+    "names": [
+      "자산총계"
+    ],
+    "statement": "BS"
+  },
+  "liabilities": {
+    "ids": [
+      "ifrs-full_Liabilities",
+      "ifrs_Liabilities"
+    ],
+    "names": [
+      "부채총계"
+    ],
+    "statement": "BS"
+  },
+  "equity": {
+    "ids": [
+      "ifrs-full_Equity",
+      "ifrs_Equity"
+    ],
+    "names": [
+      "자본총계"
+    ],
+    "statement": "BS"
+  },
+  "current_assets": {
+    "ids": [
+      "ifrs-full_CurrentAssets",
+      "ifrs_CurrentAssets"
+    ],
+    "names": [
+      "유동자산"
+    ],
+    "statement": "BS"
+  },
+  "current_liabilities": {
+    "ids": [
+      "ifrs-full_CurrentLiabilities",
+      "ifrs_CurrentLiabilities"
+    ],
+    "names": [
+      "유동부채"
+    ],
+    "statement": "BS"
+  },
+  "cash": {
+    "ids": [
+      "ifrs-full_CashAndCashEquivalents",
+      "ifrs_CashAndCashEquivalents"
+    ],
+    "names": [
+      "현금및현금성자산",
+      "현금 및 현금성자산"
+    ],
+    "statement": "BS"
+  },
+  "ocf": {
+    "ids": [
+      "ifrs-full_CashFlowsFromUsedInOperatingActivities",
+      "ifrs_CashFlowsFromUsedInOperatingActivities"
+    ],
+    "names": [
+      "영업활동현금흐름",
+      "영업활동으로 인한 현금흐름"
+    ],
+    "statement": "CF"
+  },
+  "icf": {
+    "ids": [
+      "ifrs-full_CashFlowsFromUsedInInvestingActivities",
+      "ifrs_CashFlowsFromUsedInInvestingActivities"
+    ],
+    "names": [
+      "투자활동현금흐름",
+      "투자활동으로 인한 현금흐름"
+    ],
+    "statement": "CF"
+  },
+  "fcf_financing": {
+    "ids": [
+      "ifrs-full_CashFlowsFromUsedInFinancingActivities",
+      "ifrs_CashFlowsFromUsedInFinancingActivities"
+    ],
+    "names": [
+      "재무활동현금흐름",
+      "재무활동으로 인한 현금흐름"
+    ],
+    "statement": "CF"
+  }
+}

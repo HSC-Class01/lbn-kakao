@@ -1,0 +1,37 @@
+[
+  {
+    "name": "NAVER",
+    "segment": "종합 플랫폼 · 광고 · 커머스",
+    "relation": "핵심 비교기업",
+    "note": "검색·광고·커머스 중심. 카카오의 메신저 중심 구성과 차이",
+    "url": "https://www.navercorp.com/"
+  },
+  {
+    "name": "NHN",
+    "segment": "게임 · 결제 · 클라우드",
+    "relation": "사업부문 비교기업",
+    "note": "종합 연결재무 직접 비교보다 사업부문 비교에 적합",
+    "url": "https://www.nhn.com/"
+  },
+  {
+    "name": "엔씨소프트",
+    "segment": "게임 · 디지털 콘텐츠",
+    "relation": "게임 부문 비교기업",
+    "note": "카카오게임즈 사업과 비교; 카카오 전체의 직접 peer 아님",
+    "url": "https://www.ncsoft.com/"
+  },
+  {
+    "name": "넷마블",
+    "segment": "게임 · 디지털 콘텐츠",
+    "relation": "게임 부문 비교기업",
+    "note": "게임사업 중심 비교; 플랫폼 수익구조와 차이",
+    "url": "https://www.netmarble.com/"
+  },
+  {
+    "name": "크래프톤",
+    "segment": "게임 · 디지털 콘텐츠",
+    "relation": "게임 부문 비교기업",
+    "note": "게임 포트폴리오와 해외 비중 차이 유의",
+    "url": "https://www.krafton.com/"
+  }
+]
