@@ -1,8 +1,8 @@
-[![🔗 대시보드 바로가기](assets/dashboard-badge.svg)](https://HSC-Class01.github.io/lbn-kakao/)
+[![🔗 대시보드 바로가기](assets/dashboard-badge.svg)]([https://HSC-Class01.github.io/lbn-kakao/](https://github.com/HSC-Class01/lbn-kakao))
 
 # KAKAO DART Financial Intelligence Agent
 
-**대시보드 예정 주소:** https://HSC-Class01.github.io/lbn-kakao/ (Pages 배포 성공 후 활성화)
+**대시보드 예정 주소:** [https://HSC-Class01.github.io/lbn-kakao/ (Pages 배포 성공 후 활성화)](https://github.com/HSC-Class01/lbn-kakao)
 
 > 패키지는 개발 산출물입니다. 실제 수집·원격 저장·배포를 실행하지 않았습니다. DART 인증키와 저장소 관리자 설정이 필요합니다. 요청에 언급된 재무항목 파일과 배지 이미지는 제공되지 않아 기본 재무항목 및 SVG 배지를 사용합니다.
 
