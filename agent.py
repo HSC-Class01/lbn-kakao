@@ -98,22 +98,35 @@ def extract(rows,code):
  for metric,cfg in METRICS.items():
   sj=['IS','CIS'] if cfg['statement']=='IS' else [cfg['statement']]
   eligible=[r for r in rows if r.get('sj_div') in sj and r.get('currency','KRW')=='KRW']
+  excluded_ids=set(cfg.get('exclude_ids',[]))
+  excluded=[r for r in eligible if r.get('account_id') in excluded_ids]
+  eligible=[r for r in eligible if r.get('account_id') not in excluded_ids]
   hits=[r for r in eligible if r.get('account_id') in cfg['ids']]
   if not hits:hits=[r for r in eligible if norm(r.get('account_nm')) in [norm(x) for x in cfg['names']]]
+  if not hits and excluded:warnings.append(metric+': excluded mismatched account ID')
   # IS preferred to identical CIS repeat. Conflicting duplicates stay missing.
   if any(r.get('sj_div')=='IS' for r in hits):hits=[r for r in hits if r.get('sj_div')=='IS']
   field='thstrm_add_amount' if cfg['statement']=='IS' and code!='11011' else 'thstrm_amount'
   values={number(r.get(field)) for r in hits};values.discard(None)
   vals[metric]=next(iter(values)) if len(values)==1 else None
-  if len(values)>1:warnings.append(metric+': conflicting accounts')
-  if vals[metric] is not None:
+  aggregated=False
+  if metric=='cash':
+   fin=[r for r in hits if norm(r.get('account_nm'))=='현금및현금성자산,금융업']
+   nonfin=[r for r in hits if norm(r.get('account_nm'))=='현금및현금성자산,비금융업']
+   ending=[r for r in rows if r.get('sj_div')=='CF' and r.get('account_id')=='dart_CashAndCashEquivalentsAtEndOfPeriodCf' and r.get('currency','KRW')=='KRW']
+   totals={number(r.get(field)) for r in ending};totals.discard(None)
+   if len(fin)==1 and len(nonfin)==1:
+    total=number(fin[0].get(field))+number(nonfin[0].get(field)) if number(fin[0].get(field)) is not None and number(nonfin[0].get(field)) is not None else None
+    if total is not None and total in totals:
+     vals[metric]=total;trace[metric]={'source':'segment_sum_reconciled_to_cash_flow','rows':[{'account_nm':r.get('account_nm'),'amount_krw':number(r.get(field))} for r in (fin[0],nonfin[0])],'cash_flow_ending_krw':total};aggregated=True
+  if len(values)>1 and not aggregated:warnings.append(metric+': conflicting accounts')
+  if vals[metric] is not None and not aggregated:
    chosen=next(r for r in hits if number(r.get(field))==vals[metric])
    trace[metric]={'account_id':chosen.get('account_id'),'account_nm':chosen.get('account_nm'),'field':field,'rcept_no':chosen.get('rcept_no')}
   if cfg['statement']=='IS' and code!='11011':
    q={number(r.get('thstrm_amount')) for r in hits};q.discard(None)
    quarter[metric]=next(iter(q)) if len(q)==1 else None
  return vals,quarter,trace,warnings
-
 def ratio(a,b):return a/b*100 if a is not None and b is not None and b>0 else None
 
 def enrich(records):
