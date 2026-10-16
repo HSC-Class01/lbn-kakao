@@ -23,4 +23,4 @@
 
 ## 원격 배포
 
-Actions는 데이터와 `docs/index.html`을 생성·커밋한 뒤 Pages 배포를 실행합니다. 배포 뒤 `page_url`을 조회해 HTTP 200, 카카오 페이지 제목/종목코드, payload 치환 여부를 재시도 검증하는 단계를 포함합니다. GitHub Actions job 로그/최종 상태는 연결된 저장소 도구에서 반환되지 않아 여기서는 해당 원격 검증의 통과 여부를 별도로 확인할 수 없습니다.
+Actions는 데이터와 `docs/index.html`을 생성·커밋한 뒤 Pages 배포를 실행합니다. 배포 뒤 `page_url`을 조회해 HTTP 200, 카카오 페이지 제목/종목코드, payload 치환 여부를 재시도 검증하고 성공 시 `deployment-status.json`을 커밋하도록 구성했습니다. 2026-10-16 12:20 UTC 기준 데이터/HTML 스냅샷은 반영됐지만 확인 파일은 아직 생성되지 않았습니다. 연결된 저장소 도구가 Actions job 상태/로그를 제공하지 않아 Pages 설정 또는 배포 단계의 통과 여부는 확인되지 않았습니다.
