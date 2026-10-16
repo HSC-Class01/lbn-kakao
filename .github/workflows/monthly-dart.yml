@@ -117,3 +117,30 @@ jobs:
       - name: Deploy dashboard
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Verify live dashboard
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          python - <<'PY'
+          import os
+          import time
+          import urllib.error
+          import urllib.request
+
+          url = os.environ["PAGE_URL"].rstrip("/") + "/"
+          last_error = None
+          for attempt in range(12):
+              try:
+                  with urllib.request.urlopen(url, timeout=20) as response:
+                      html = response.read().decode("utf-8")
+                      if response.status == 200 and "<title>KAKAO" in html and "035720" in html and "__PAYLOAD__" not in html:
+                          print(f"Live dashboard verified: {url} ({len(html)} bytes)")
+                          break
+                      last_error = f"Unexpected response: HTTP {response.status}"
+              except (urllib.error.URLError, TimeoutError) as exc:
+                  last_error = str(exc)
+              if attempt < 11:
+                  time.sleep(10)
+          else:
+              raise SystemExit(f"Live dashboard verification failed: {last_error}")
+          PY
