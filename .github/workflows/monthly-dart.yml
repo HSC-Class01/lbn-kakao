@@ -108,6 +108,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     permissions:
+      contents: write
       pages: write
       id-token: write
     environment:
@@ -144,3 +145,48 @@ jobs:
           else:
               raise SystemExit(f"Live dashboard verification failed: {last_error}")
           PY
+      - name: Checkout for deployment status
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+      - name: Record verified deployment
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+          SOURCE_SHA: ${{ github.sha }}
+          WORKFLOW_RUN_ID: ${{ github.run_id }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          import os
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          status_path = Path("data/status.json")
+          status = json.loads(status_path.read_text(encoding="utf-8")) if status_path.exists() else {}
+          report = {
+              "verified_at": datetime.now(timezone.utc).isoformat(),
+              "page_url": os.environ["PAGE_URL"],
+              "source_sha": os.environ["SOURCE_SHA"],
+              "workflow_run_id": os.environ["WORKFLOW_RUN_ID"],
+              "data_updated_at": status.get("updated_at"),
+          }
+          Path("deployment-status.json").write_text(
+              json.dumps(report, ensure_ascii=False, indent=2) + "\n",
+              encoding="utf-8",
+          )
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add deployment-status.json
+          git commit -m "deploy: record verified Kakao dashboard"
+          branch="${{ github.event.repository.default_branch }}"
+          git fetch origin "$branch"
+          if ! git rebase "origin/$branch"; then
+            git rebase --abort
+            echo "Could not rebase the deployment verification record."
+            exit 1
+          fi
+          git push origin "HEAD:$branch"
