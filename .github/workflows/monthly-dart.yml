@@ -79,7 +79,25 @@ jobs:
           git add data docs
           if ! git diff --cached --quiet; then
             git commit -m "data: refresh Kakao DART dashboard"
-            git push origin "HEAD:${{ github.event.repository.default_branch }}"
+            branch="${{ github.event.repository.default_branch }}"
+            pushed=false
+            for attempt in 1 2 3; do
+              git fetch origin "$branch"
+              if ! git rebase "origin/$branch"; then
+                git rebase --abort
+                echo "Could not rebase the generated snapshot; rerun against the latest branch."
+                exit 1
+              fi
+              if git push origin "HEAD:$branch"; then
+                pushed=true
+                break
+              fi
+              sleep $((attempt * 2))
+            done
+            if [[ "$pushed" != true ]]; then
+              echo "Could not push the snapshot after three attempts."
+              exit 1
+            fi
           fi
       - name: Upload dashboard artifact
         uses: actions/upload-pages-artifact@v3
