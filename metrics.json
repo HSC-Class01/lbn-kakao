@@ -9,7 +9,11 @@
       "영업수익",
       "수익(매출액)"
     ],
-    "statement": "IS"
+    "statement": "IS",
+    "exclude_ids": [
+      "ifrs_GrossProfit",
+      "ifrs-full_GrossProfit"
+    ]
   },
   "operating_profit": {
     "ids": [
@@ -93,7 +97,9 @@
     ],
     "names": [
       "현금및현금성자산",
-      "현금 및 현금성자산"
+      "현금 및 현금성자산",
+      "현금및현금성자산, 금융업",
+      "현금및현금성자산, 비금융업"
     ],
     "statement": "BS"
   },
