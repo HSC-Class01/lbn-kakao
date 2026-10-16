@@ -12,6 +12,18 @@ class TestAgent(unittest.TestCase):
  def test_ambiguous(self):
   rows=[dict(sj_div='BS',account_id='ifrs-full_Assets',thstrm_amount=str(n)) for n in [1,2]]
   v,q,t,w=extract(rows,'11011');self.assertIsNone(v['assets']);self.assertTrue(w)
+ def test_revenue_excludes_gross_profit_alias(self):
+  rows=[dict(sj_div='CIS',account_id='ifrs-full_GrossProfit',account_nm='영업수익',thstrm_amount='100',currency='KRW')]
+  v,q,t,w=extract(rows,'11011');self.assertIsNone(v['revenue']);self.assertTrue(any('excluded mismatched' in x for x in w))
+ def test_revenue_accepts_unstandardized_alias(self):
+  rows=[dict(sj_div='CIS',account_id='-표준계정코드 미사용-',account_nm='영업수익',thstrm_amount='100',currency='KRW')]
+  v,q,t,w=extract(rows,'11011');self.assertEqual(v['revenue'],100)
+ def test_segment_cash_reconciles(self):
+  rows=[
+   dict(sj_div='BS',account_id='-표준계정코드 미사용-',account_nm='현금및현금성자산, 금융업',thstrm_amount='10',currency='KRW'),
+   dict(sj_div='BS',account_id='-표준계정코드 미사용-',account_nm='현금및현금성자산, 비금융업',thstrm_amount='90',currency='KRW'),
+   dict(sj_div='CF',account_id='dart_CashAndCashEquivalentsAtEndOfPeriodCf',account_nm='기말현금및현금성자산',thstrm_amount='100',currency='KRW')]
+  v,q,t,w=extract(rows,'11011');self.assertEqual(v['cash'],100);self.assertEqual(t['cash']['source'],'segment_sum_reconciled_to_cash_flow');self.assertFalse(any('cash: conflicting' in x for x in w))
  def test_missing_ytd(self):
   v,*_=extract([dict(sj_div='IS',account_id='ifrs-full_Revenue',thstrm_amount='10')],'11012');self.assertIsNone(v['revenue'])
  def test_ratios(self):
