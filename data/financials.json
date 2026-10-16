@@ -8403,7 +8403,7 @@
       "equity": 13858599224126,
       "current_assets": 8943259940386,
       "current_liabilities": 6766752561041,
-      "cash": null,
+      "cash": 5389190634441,
       "ocf": 1341098333644,
       "icf": -1779932042360,
       "fcf_financing": 1019586517417
@@ -8458,6 +8458,22 @@
         "field": "thstrm_amount",
         "rcept_no": "20240418000375"
       },
+      "cash": {
+        "source": "duplicate_rows_reconciled_to_cash_flow",
+        "rows": [
+          {
+            "account_id": "-표준계정코드 미사용-",
+            "account_nm": "현금및현금성자산",
+            "amount_krw": 120412073981
+          },
+          {
+            "account_id": "-표준계정코드 미사용-",
+            "account_nm": "현금및현금성자산",
+            "amount_krw": 5268778560460
+          }
+        ],
+        "cash_flow_ending_krw": 5389190634441
+      },
       "ocf": {
         "account_id": "ifrs-full_CashFlowsFromUsedInOperatingActivities",
         "account_nm": "영업활동으로 인한 현금흐름",
@@ -8477,9 +8493,7 @@
         "rcept_no": "20240418000375"
       }
     },
-    "warnings": [
-      "cash: conflicting accounts"
-    ],
+    "warnings": [],
     "status": "api",
     "ratios": {
       "operating_margin": 6.098421840772007,
@@ -9128,10 +9142,12 @@
         "source": "segment_sum_reconciled_to_cash_flow",
         "rows": [
           {
+            "account_id": "-표준계정코드 미사용-",
             "account_nm": "현금및현금성자산, 금융업",
             "amount_krw": 132329186055
           },
           {
+            "account_id": "-표준계정코드 미사용-",
             "account_nm": "현금및현금성자산, 비금융업",
             "amount_krw": 5108425494450
           }
@@ -9527,7 +9543,7 @@
       "equity": 14037252261697,
       "current_assets": 9165625937057,
       "current_liabilities": 7371705362639,
-      "cash": null,
+      "cash": 6019057919941,
       "ocf": 632518582178,
       "icf": 194898187857,
       "fcf_financing": -176982762369
@@ -9586,6 +9602,22 @@
         "field": "thstrm_amount",
         "rcept_no": "20240926000448"
       },
+      "cash": {
+        "source": "duplicate_rows_reconciled_to_cash_flow",
+        "rows": [
+          {
+            "account_id": "-표준계정코드 미사용-",
+            "account_nm": "현금및현금성자산",
+            "amount_krw": 109990710310
+          },
+          {
+            "account_id": "-표준계정코드 미사용-",
+            "account_nm": "현금및현금성자산",
+            "amount_krw": 5909067209631
+          }
+        ],
+        "cash_flow_ending_krw": 6019057919941
+      },
       "ocf": {
         "account_id": "ifrs-full_CashFlowsFromUsedInOperatingActivities",
         "account_nm": "영업활동현금흐름",
@@ -9605,9 +9637,7 @@
         "rcept_no": "20240926000448"
       }
     },
-    "warnings": [
-      "cash: conflicting accounts"
-    ],
+    "warnings": [],
     "status": "api",
     "ratios": {
       "operating_margin": 6.367205254854591,
@@ -9755,7 +9785,7 @@
       "equity": 13973882624649,
       "current_assets": 9056612732433,
       "current_liabilities": 6883579961335,
-      "cash": null,
+      "cash": 5786194871724,
       "ocf": 349789084816,
       "icf": 180004794548,
       "fcf_financing": -124404678119
@@ -9814,6 +9844,22 @@
         "field": "thstrm_amount",
         "rcept_no": "20240621000676"
       },
+      "cash": {
+        "source": "duplicate_rows_reconciled_to_cash_flow",
+        "rows": [
+          {
+            "account_id": "-표준계정코드 미사용-",
+            "account_nm": "현금및현금성자산",
+            "amount_krw": 119825079388
+          },
+          {
+            "account_id": "-표준계정코드 미사용-",
+            "account_nm": "현금및현금성자산",
+            "amount_krw": 5666369792336
+          }
+        ],
+        "cash_flow_ending_krw": 5786194871724
+      },
       "ocf": {
         "account_id": "ifrs-full_CashFlowsFromUsedInOperatingActivities",
         "account_nm": "영업활동현금흐름",
@@ -9833,9 +9879,7 @@
         "rcept_no": "20240621000676"
       }
     },
-    "warnings": [
-      "cash: conflicting accounts"
-    ],
+    "warnings": [],
     "status": "api",
     "ratios": {
       "operating_margin": 6.049944779540016,
@@ -10046,10 +10090,12 @@
         "source": "segment_sum_reconciled_to_cash_flow",
         "rows": [
           {
+            "account_id": "-표준계정코드 미사용-",
             "account_nm": "현금및현금성자산, 금융업",
             "amount_krw": 127119663147
           },
           {
+            "account_id": "-표준계정코드 미사용-",
             "account_nm": "현금및현금성자산, 비금융업",
             "amount_krw": 5774213417383
           }
