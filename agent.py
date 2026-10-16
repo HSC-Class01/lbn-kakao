@@ -196,7 +196,10 @@ def collect(full=False):
  save('data/status.json',{'updated_at':datetime.now(timezone.utc).isoformat(),'corp_code':corp,'stock_code':'035720','reports':len(reports),'periods':len(latest),'records':len(records),'legacy_review_required':sum(r['status']=='legacy_review_required' for r in records)})
 
 def build():
- records=load('data/financials.json',[]);peers=load('peers.json',[]);status=load('data/status.json',{'updated_at':None})
+ records=load('data/financials.json',[])
+ if not (ROOT/'data/financials.json').exists():save('data/financials.json',records)
+ if not (ROOT/'data/reports.json').exists():save('data/reports.json',[])
+ peers=load('peers.json',[]);status=load('data/status.json',{'updated_at':None})
  template=(ROOT/'template.html').read_text(encoding='utf-8')
  payload=json.dumps({'records':records,'peers':peers,'status':status},ensure_ascii=False,allow_nan=False).replace('<','\\u003c')
  html=template.replace('__PAYLOAD__',payload)
