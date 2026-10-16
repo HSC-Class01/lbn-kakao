@@ -3051,7 +3051,7 @@
     "report_name": "사업보고서 (2017.12)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20180330002462",
     "values": {
-      "revenue": 1972326479100,
+      "revenue": null,
       "operating_profit": 165379527605,
       "net_income": 125093899312,
       "assets": 6349428454887,
@@ -3066,12 +3066,6 @@
     },
     "quarter_values": {},
     "trace": {
-      "revenue": {
-        "account_id": "ifrs_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_amount",
-        "rcept_no": "20180330002462"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -3139,15 +3133,17 @@
         "rcept_no": "20180330002462"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 8.384997583182322,
-      "net_margin": 6.3424539820142805,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 40.853643868536736,
       "current_ratio": 191.48493368283727,
       "equity_ratio": 70.99567838893344,
-      "revenue_yoy": 34.70033536646135,
+      "revenue_yoy": null,
       "operating_profit_yoy": 42.40276242548289,
       "roa": 2.114225155625505,
       "roe": 3.0470710045536076
@@ -3163,7 +3159,7 @@
     "report_name": "사업보고서 (2017.12)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20180330002462",
     "values": {
-      "revenue": 978700276407,
+      "revenue": null,
       "operating_profit": 97550822849,
       "net_income": 217553834744,
       "assets": 4956877856097,
@@ -3178,12 +3174,6 @@
     },
     "quarter_values": {},
     "trace": {
-      "revenue": {
-        "account_id": "ifrs_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_amount",
-        "rcept_no": "20180330002462"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -3251,15 +3241,17 @@
         "rcept_no": "20180330002462"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 9.967384826652765,
-      "net_margin": 22.228851875130008,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 39.327781985623,
       "current_ratio": 66.65485952156023,
       "equity_ratio": 71.77319453080709,
-      "revenue_yoy": 13.643070822124503,
+      "revenue_yoy": null,
       "operating_profit_yoy": 37.406160064642634,
       "roa": 4.446146490719136,
       "roe": 6.276013061287531
@@ -3739,7 +3731,7 @@
     "report_name": "분기보고서 (2017.09)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20171114002088",
     "values": {
-      "revenue": 1427641915895,
+      "revenue": null,
       "operating_profit": 130337752944,
       "net_income": 106889917842,
       "assets": 6494097939872,
@@ -3753,17 +3745,11 @@
       "fcf_financing": 419847364321
     },
     "quarter_values": {
-      "revenue": 515412543057,
+      "revenue": null,
       "operating_profit": 47365908769,
       "net_income": 39901788492
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20171114002088"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -3831,15 +3817,17 @@
         "rcept_no": "20171114002088"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 9.129582950237927,
-      "net_margin": 7.487165839831052,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 46.09155043019456,
       "current_ratio": 202.06182013914855,
       "equity_ratio": 68.45022843931142,
-      "revenue_yoy": 41.29557527194405,
+      "revenue_yoy": null,
       "operating_profit_yoy": 67.17605162667282,
       "roa": null,
       "roe": null
@@ -3855,7 +3843,7 @@
     "report_name": "분기보고서 (2017.09)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20171114002088",
     "values": {
-      "revenue": 728427679367,
+      "revenue": null,
       "operating_profit": 73639643298,
       "net_income": 288875236705,
       "assets": 5275332519174,
@@ -3869,17 +3857,11 @@
       "fcf_financing": -59007292707
     },
     "quarter_values": {
-      "revenue": 257994032971,
+      "revenue": null,
       "operating_profit": 29554917505,
       "net_income": 204879099055
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20171114002088"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -3947,15 +3929,17 @@
         "rcept_no": "20171114002088"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 10.109396633855605,
-      "net_margin": 39.65736680352827,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 44.04044854692869,
       "current_ratio": 89.59486870474265,
       "equity_ratio": 69.42494348552364,
-      "revenue_yoy": 17.494632113733346,
+      "revenue_yoy": null,
       "operating_profit_yoy": 32.62934766188346,
       "roa": null,
       "roe": null
@@ -3971,7 +3955,7 @@
     "report_name": "사업보고서 (2018.12)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20190401005013",
     "values": {
-      "revenue": 2416992440597,
+      "revenue": null,
       "operating_profit": 72948889927,
       "net_income": 15888859209,
       "assets": 7959542105267,
@@ -3986,12 +3970,6 @@
     },
     "quarter_values": {},
     "trace": {
-      "revenue": {
-        "account_id": "ifrs_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_amount",
-        "rcept_no": "20190401005013"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -4059,15 +4037,17 @@
         "rcept_no": "20190401005013"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 3.0181678974958457,
-      "net_margin": 0.657381419243307,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 41.448715700942984,
       "current_ratio": 140.19984927943986,
       "equity_ratio": 70.69700103281555,
-      "revenue_yoy": 22.545251316602876,
+      "revenue_yoy": null,
       "operating_profit_yoy": -55.89001191173163,
       "roa": 0.2220824921290354,
       "roe": 0.313545035757992
@@ -4083,7 +4063,7 @@
     "report_name": "사업보고서 (2018.12)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20190401005013",
     "values": {
-      "revenue": 1173924651860,
+      "revenue": null,
       "operating_profit": 122366055178,
       "net_income": 90230380212,
       "assets": 6202838878843,
@@ -4098,12 +4078,6 @@
     },
     "quarter_values": {},
     "trace": {
-      "revenue": {
-        "account_id": "ifrs_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_amount",
-        "rcept_no": "20190401005013"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -4171,15 +4145,17 @@
         "rcept_no": "20190401005013"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 10.423671994971713,
-      "net_margin": 7.686215641611784,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 30.54916373354627,
       "current_ratio": 100.861415067961,
       "equity_ratio": 76.59949488769013,
-      "revenue_yoy": 19.9473097289506,
+      "revenue_yoy": null,
       "operating_profit_yoy": 25.438260390085876,
       "roa": 1.6170729482675374,
       "roe": 2.1718571777248097
@@ -4195,7 +4171,7 @@
     "report_name": "[기재정정]반기보고서 (2018.06)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20181204000180",
     "values": {
-      "revenue": 1144354675606,
+      "revenue": null,
       "operating_profit": 37991768196,
       "net_income": 37143812001,
       "assets": 7734027089020,
@@ -4209,17 +4185,11 @@
       "fcf_financing": 1222820357319
     },
     "quarter_values": {
-      "revenue": 588933376660,
+      "revenue": null,
       "operating_profit": 27590056495,
       "net_income": 22494359446
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20181204000180"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -4287,15 +4257,17 @@
         "rcept_no": "20181204000180"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 3.319929476923859,
-      "net_margin": 3.2458304049249653,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 33.73695156366007,
       "current_ratio": 176.9974617836614,
       "equity_ratio": 74.77364993802706,
-      "revenue_yoy": 25.4459360419238,
+      "revenue_yoy": null,
       "operating_profit_yoy": -54.21125253541468,
       "roa": null,
       "roe": null
@@ -4311,7 +4283,7 @@
     "report_name": "[기재정정]반기보고서 (2018.06)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20181204000180",
     "values": {
-      "revenue": 497100514671,
+      "revenue": null,
       "operating_profit": 45903606401,
       "net_income": 97697472380,
       "assets": 6039937755413,
@@ -4325,17 +4297,11 @@
       "fcf_financing": 1041630974972
     },
     "quarter_values": {
-      "revenue": 252522857587,
+      "revenue": null,
       "operating_profit": 29517978546,
       "net_income": 44313624457
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20181204000180"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -4403,15 +4369,17 @@
         "rcept_no": "20181204000180"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 9.234270544133464,
-      "net_margin": 19.653464339030087,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 28.74969920484468,
       "current_ratio": 107.8106611846646,
       "equity_ratio": 77.67008437114634,
-      "revenue_yoy": 5.668571642206155,
+      "revenue_yoy": null,
       "operating_profit_yoy": 4.125874835970533,
       "roa": null,
       "roe": null
@@ -4427,7 +4395,7 @@
     "report_name": "분기보고서 (2018.03)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20180515002511",
     "values": {
-      "revenue": 555421298946,
+      "revenue": null,
       "operating_profit": 10401711701,
       "net_income": 14649452555,
       "assets": 7724874126348,
@@ -4441,17 +4409,11 @@
       "fcf_financing": 1261878281311
     },
     "quarter_values": {
-      "revenue": 555421298946,
+      "revenue": null,
       "operating_profit": 10401711701,
       "net_income": 14649452555
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20180515002511"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -4519,15 +4481,17 @@
         "rcept_no": "20180515002511"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 1.872760681079191,
-      "net_margin": 2.6375388525430443,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 34.29538909887829,
       "current_ratio": 267.9838809636832,
       "equity_ratio": 74.46272032941692,
-      "revenue_yoy": 25.155040526215956,
+      "revenue_yoy": null,
       "operating_profit_yoy": -72.86514149307173,
       "roa": null,
       "roe": null
@@ -4543,7 +4507,7 @@
     "report_name": "분기보고서 (2018.03)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20180515002511",
     "values": {
-      "revenue": 244577657084,
+      "revenue": null,
       "operating_profit": 16385627855,
       "net_income": 53383847923,
       "assets": 6065845048582,
@@ -4557,17 +4521,11 @@
       "fcf_financing": 1051417853822
     },
     "quarter_values": {
-      "revenue": 244577657084,
+      "revenue": null,
       "operating_profit": 16385627855,
       "net_income": 53383847923
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20180515002511"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -4635,15 +4593,17 @@
         "rcept_no": "20180515002511"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 6.699560397445614,
-      "net_margin": 21.826952044382924,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 30.320128658282325,
       "current_ratio": 164.4564980283811,
       "equity_ratio": 76.73411700061625,
-      "revenue_yoy": 8.273458815394964,
+      "revenue_yoy": null,
       "operating_profit_yoy": -0.6448262842075114,
       "roa": null,
       "roe": null
@@ -4659,7 +4619,7 @@
     "report_name": "[기재정정]분기보고서 (2018.09)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20181204000182",
     "values": {
-      "revenue": 1743647841457,
+      "revenue": null,
       "operating_profit": 68655889383,
       "net_income": 44528027277,
       "assets": 7710898617892,
@@ -4673,17 +4633,11 @@
       "fcf_financing": 993843252378
     },
     "quarter_values": {
-      "revenue": 599293165851,
+      "revenue": null,
       "operating_profit": 30664121187,
       "net_income": 7384215276
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20181204000182"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -4751,15 +4705,17 @@
         "rcept_no": "20181204000182"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 3.937485984878164,
-      "net_margin": 2.5537282367632317,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 38.07472172251802,
       "current_ratio": 150.9069127258438,
       "equity_ratio": 72.42455299020271,
-      "revenue_yoy": 22.134817004437245,
+      "revenue_yoy": null,
       "operating_profit_yoy": -47.3246332453666,
       "roa": null,
       "roe": null
@@ -4775,7 +4731,7 @@
     "report_name": "[기재정정]분기보고서 (2018.09)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20181204000182",
     "values": {
-      "revenue": 788878877602,
+      "revenue": null,
       "operating_profit": 81894062027,
       "net_income": 91145682736,
       "assets": 6428894186085,
@@ -4789,17 +4745,11 @@
       "fcf_financing": 1041467829632
     },
     "quarter_values": {
-      "revenue": 291778362931,
+      "revenue": null,
       "operating_profit": 35990455626,
       "net_income": -6551789644
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20181204000182"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -4867,15 +4817,17 @@
         "rcept_no": "20181204000182"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 10.381069179585342,
-      "net_margin": 11.5538247155331,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 35.5406973541496,
       "current_ratio": 109.93085879042268,
       "equity_ratio": 73.77857864986001,
-      "revenue_yoy": 8.298860675850728,
+      "revenue_yoy": null,
       "operating_profit_yoy": 11.20920520431714,
       "roa": null,
       "roe": null
@@ -4891,7 +4843,7 @@
     "report_name": "사업보고서 (2019.12)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20200330004659",
     "values": {
-      "revenue": 3070111364510,
+      "revenue": null,
       "operating_profit": 206786221786,
       "net_income": -341924578348,
       "assets": 8737255755774,
@@ -4906,12 +4858,6 @@
     },
     "quarter_values": {},
     "trace": {
-      "revenue": {
-        "account_id": "ifrs-full_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_amount",
-        "rcept_no": "20200330004659"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -4979,15 +4925,17 @@
         "rcept_no": "20200330004659"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 6.735463220533819,
-      "net_margin": -11.13720441221103,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 52.21387668943699,
       "current_ratio": 116.28934829841442,
       "equity_ratio": 65.69703247492387,
-      "revenue_yoy": 27.02196800217045,
+      "revenue_yoy": null,
       "operating_profit_yoy": 183.46726316593865,
       "roa": -4.09569045745975,
       "roe": -6.015946105872385
@@ -5003,7 +4951,7 @@
     "report_name": "사업보고서 (2019.12)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20200330004659",
     "values": {
-      "revenue": 1513471072651,
+      "revenue": null,
       "operating_profit": 196063924523,
       "net_income": -259705692892,
       "assets": 6484360616810,
@@ -5018,12 +4966,6 @@
     },
     "quarter_values": {},
     "trace": {
-      "revenue": {
-        "account_id": "ifrs-full_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_amount",
-        "rcept_no": "20200330004659"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -5091,15 +5033,17 @@
         "rcept_no": "20200330004659"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 12.95458684780634,
-      "net_margin": -17.159607314931947,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 33.469447434113114,
       "current_ratio": 73.96552726185841,
       "equity_ratio": 74.92351389958722,
-      "revenue_yoy": 28.92403871517757,
+      "revenue_yoy": null,
       "operating_profit_yoy": 60.22738024674838,
       "roa": -4.093979809823005,
       "roe": -5.405099721301329
@@ -5115,7 +5059,7 @@
     "report_name": "반기보고서 (2019.06)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20190814002715",
     "values": {
-      "revenue": 1439347699858,
+      "revenue": null,
       "operating_profit": 68121964685,
       "net_income": 48556162160,
       "assets": 8178307832023,
@@ -5129,17 +5073,11 @@
       "fcf_financing": -97717953565
     },
     "quarter_values": {
-      "revenue": 733035281650,
+      "revenue": null,
       "operating_profit": 40458579225,
       "net_income": 30992493982
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20190814002715"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -5207,15 +5145,17 @@
         "rcept_no": "20190814002715"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 4.732835901410106,
-      "net_margin": 3.373483847217065,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 44.34039031240797,
       "current_ratio": 139.82535257023935,
       "equity_ratio": 69.28067728205643,
-      "revenue_yoy": 25.778111501644773,
+      "revenue_yoy": null,
       "operating_profit_yoy": 79.30717078909817,
       "roa": null,
       "roe": null
@@ -5231,7 +5171,7 @@
     "report_name": "반기보고서 (2019.06)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20190814002715",
     "values": {
-      "revenue": 693482894469,
+      "revenue": null,
       "operating_profit": 80002025931,
       "net_income": 47341579985,
       "assets": 6286383426074,
@@ -5245,17 +5185,11 @@
       "fcf_financing": -121574858237
     },
     "quarter_values": {
-      "revenue": 361960671925,
+      "revenue": null,
       "operating_profit": 45348379335,
       "net_income": 26137432897
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20190814002715"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -5323,15 +5257,17 @@
         "rcept_no": "20190814002715"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 11.536265215634131,
-      "net_margin": 6.826639901658924,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 30.98828650998433,
       "current_ratio": 103.55687302182336,
       "equity_ratio": 76.34270411833938,
-      "revenue_yoy": 39.505567586863855,
+      "revenue_yoy": null,
       "operating_profit_yoy": 74.28265925802546,
       "roa": null,
       "roe": null
@@ -5347,7 +5283,7 @@
     "report_name": "분기보고서 (2019.03)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20190515002549",
     "values": {
-      "revenue": 706312418208,
+      "revenue": null,
       "operating_profit": 27663385460,
       "net_income": 17563668178,
       "assets": 8074978102543,
@@ -5361,17 +5297,11 @@
       "fcf_financing": -59432983235
     },
     "quarter_values": {
-      "revenue": 706312418208,
+      "revenue": null,
       "operating_profit": 27663385460,
       "net_income": 17563668178
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20190515002549"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -5439,15 +5369,17 @@
         "rcept_no": "20190515002549"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 3.9165933865619063,
-      "net_margin": 2.4866712980300063,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 43.22537300248348,
       "current_ratio": 140.74596473242585,
       "equity_ratio": 69.8200311185547,
-      "revenue_yoy": 27.166966687870953,
+      "revenue_yoy": null,
       "operating_profit_yoy": 165.95031909354398,
       "roa": null,
       "roe": null
@@ -5463,7 +5395,7 @@
     "report_name": "분기보고서 (2019.03)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20190515002549",
     "values": {
-      "revenue": 331522222544,
+      "revenue": null,
       "operating_profit": 34653646596,
       "net_income": 21204147088,
       "assets": 6323278649835,
@@ -5477,17 +5409,11 @@
       "fcf_financing": -52857911939
     },
     "quarter_values": {
-      "revenue": 331522222544,
+      "revenue": null,
       "operating_profit": 34653646596,
       "net_income": 21204147088
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20190515002549"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -5555,15 +5481,17 @@
         "rcept_no": "20190515002549"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 10.45288799347402,
-      "net_margin": 6.395995696845258,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 32.688702489278676,
       "current_ratio": 100.0956658538399,
       "equity_ratio": 75.36436646373873,
-      "revenue_yoy": 35.5488585901937,
+      "revenue_yoy": null,
       "operating_profit_yoy": 111.48806077287783,
       "roa": null,
       "roe": null
@@ -5579,7 +5507,7 @@
     "report_name": "분기보고서 (2019.09)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20191114002583",
     "values": {
-      "revenue": 2222522691428,
+      "revenue": null,
       "operating_profit": 127204306772,
       "net_income": 100010476570,
       "assets": 8785300175527,
@@ -5593,17 +5521,11 @@
       "fcf_financing": -31567340015
     },
     "quarter_values": {
-      "revenue": 783174991570,
+      "revenue": null,
       "operating_profit": 59082342087,
       "net_income": 51454314410
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs-full_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20191114002583"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -5671,15 +5593,17 @@
         "rcept_no": "20191114002583"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 5.723419934591064,
-      "net_margin": 4.499863014030329,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 49.30968191026911,
       "current_ratio": 131.0282641770863,
       "equity_ratio": 66.97489320223532,
-      "revenue_yoy": 27.463965978981754,
+      "revenue_yoy": null,
       "operating_profit_yoy": 85.27806997355316,
       "roa": null,
       "roe": null
@@ -5695,7 +5619,7 @@
     "report_name": "분기보고서 (2019.09)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20191114002583",
     "values": {
-      "revenue": 1081965074670,
+      "revenue": null,
       "operating_profit": 129525983344,
       "net_income": 113491740968,
       "assets": 6638902444099,
@@ -5709,17 +5633,11 @@
       "fcf_financing": -112027642667
     },
     "quarter_values": {
-      "revenue": 388482180201,
+      "revenue": null,
       "operating_profit": 49523957413,
       "net_income": 66150160983
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs-full_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20191114002583"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -5787,15 +5705,17 @@
         "rcept_no": "20191114002583"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 11.971364545524308,
-      "net_margin": 10.48940891207741,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 35.09129034327956,
       "current_ratio": 92.1160723785643,
       "equity_ratio": 74.02401720043585,
-      "revenue_yoy": 37.15224293479764,
+      "revenue_yoy": null,
       "operating_profit_yoy": 58.16285105176004,
       "roa": null,
       "roe": null
@@ -5811,7 +5731,7 @@
     "report_name": "[기재정정]사업보고서 (2020.12)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320000376",
     "values": {
-      "revenue": 4071392494202,
+      "revenue": null,
       "operating_profit": 450519574781,
       "net_income": 168978904480,
       "assets": 11954146190738,
@@ -5826,12 +5746,6 @@
     },
     "quarter_values": {},
     "trace": {
-      "revenue": {
-        "account_id": "ifrs-full_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_amount",
-        "rcept_no": "20240320000376"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -5899,15 +5813,17 @@
         "rcept_no": "20240320000376"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 11.065491116923194,
-      "net_margin": 4.150395834364777,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 61.28621326263595,
       "current_ratio": 151.3117652588983,
       "equity_ratio": 62.001579662089014,
-      "revenue_yoy": 32.613837441424785,
+      "revenue_yoy": null,
       "operating_profit_yoy": 117.86730802946633,
       "roa": 1.6333248459124847,
       "roe": 2.5696545305813645
@@ -5923,7 +5839,7 @@
     "report_name": "[기재정정]사업보고서 (2020.12)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320000376",
     "values": {
-      "revenue": 1779194942006,
+      "revenue": null,
       "operating_profit": 296656217228,
       "net_income": -120417114552,
       "assets": 7345506484784,
@@ -5938,12 +5854,6 @@
     },
     "quarter_values": {},
     "trace": {
-      "revenue": {
-        "account_id": "ifrs-full_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_amount",
-        "rcept_no": "20240320000376"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -6011,15 +5921,17 @@
         "rcept_no": "20240320000376"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 16.673620760945237,
-      "net_margin": -6.768067495528768,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 38.22735910368337,
       "current_ratio": 124.06739308914399,
       "equity_ratio": 72.34457827194014,
-      "revenue_yoy": 17.55724798159224,
+      "revenue_yoy": null,
       "operating_profit_yoy": 51.30586514052953,
       "roa": -1.7414066768309144,
       "roe": -2.367529278561741
@@ -6035,7 +5947,7 @@
     "report_name": "반기보고서 (2020.06)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20200814002188",
     "values": {
-      "revenue": 1821230086414,
+      "revenue": null,
       "operating_profit": 185981909842,
       "net_income": 225121778394,
       "assets": 10042994999034,
@@ -6049,17 +5961,11 @@
       "fcf_financing": 383964360910
     },
     "quarter_values": {
-      "revenue": 952853054802,
+      "revenue": null,
       "operating_profit": 97771189468,
       "net_income": 145222363913
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs-full_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20200814002188"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -6127,15 +6033,17 @@
         "rcept_no": "20200814002188"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 10.211884331880228,
-      "net_margin": 12.360974051184522,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 49.86257346508277,
       "current_ratio": 141.0489038522065,
       "equity_ratio": 66.72780113661901,
-      "revenue_yoy": 26.53162863939511,
+      "revenue_yoy": null,
       "operating_profit_yoy": 173.01313269808256,
       "roa": null,
       "roe": null
@@ -6151,7 +6059,7 @@
     "report_name": "반기보고서 (2020.06)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20200814002188",
     "values": {
-      "revenue": 821703645751,
+      "revenue": null,
       "operating_profit": 121166213484,
       "net_income": 89844271820,
       "assets": 6675319329322,
@@ -6165,17 +6073,11 @@
       "fcf_financing": 5536571639
     },
     "quarter_values": {
-      "revenue": 415094226586,
+      "revenue": null,
       "operating_profit": 55720954931,
       "net_income": 34118857947
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs-full_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20200814002188"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -6243,15 +6145,17 @@
         "rcept_no": "20200814002188"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 14.74573151896625,
-      "net_margin": 10.933902056365637,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 24.617870151686965,
       "current_ratio": 109.76546041141934,
       "equity_ratio": 80.24531303438128,
-      "revenue_yoy": 18.489389183878657,
+      "revenue_yoy": null,
       "operating_profit_yoy": 51.45393141481593,
       "roa": null,
       "roe": null
@@ -6267,7 +6171,7 @@
     "report_name": "분기보고서 (2020.03)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20200515002518",
     "values": {
-      "revenue": 868377031612,
+      "revenue": null,
       "operating_profit": 88210720374,
       "net_income": 79899414481,
       "assets": 9495806064231,
@@ -6281,17 +6185,11 @@
       "fcf_financing": 104253570329
     },
     "quarter_values": {
-      "revenue": 868377031612,
+      "revenue": null,
       "operating_profit": 88210720374,
       "net_income": 79899414481
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs-full_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20200515002518"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -6359,15 +6257,17 @@
         "rcept_no": "20200515002518"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 10.158113027270103,
-      "net_margin": 9.201005044166104,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 57.01229881089529,
       "current_ratio": 122.75181141413726,
       "equity_ratio": 63.6892783287247,
-      "revenue_yoy": 22.945174008858228,
+      "revenue_yoy": null,
       "operating_profit_yoy": 218.87174656026355,
       "roa": null,
       "roe": null
@@ -6383,7 +6283,7 @@
     "report_name": "분기보고서 (2020.03)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20200515002518",
     "values": {
-      "revenue": 406609419165,
+      "revenue": null,
       "operating_profit": 65445258553,
       "net_income": 55725413873,
       "assets": 6540362668701,
@@ -6397,17 +6297,11 @@
       "fcf_financing": 6510588915
     },
     "quarter_values": {
-      "revenue": 406609419165,
+      "revenue": null,
       "operating_profit": 65445258553,
       "net_income": 55725413873
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs-full_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20200515002518"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -6475,15 +6369,17 @@
         "rcept_no": "20200515002518"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 16.095362150585757,
-      "net_margin": 13.704899898146952,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 30.36834115594481,
       "current_ratio": 91.11838472372847,
       "equity_ratio": 76.70573937914986,
-      "revenue_yoy": 22.64921972494147,
+      "revenue_yoy": null,
       "operating_profit_yoy": 88.85532976074792,
       "roa": null,
       "roe": null
@@ -6499,7 +6395,7 @@
     "report_name": "분기보고서 (2020.09)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20201116001873",
     "values": {
-      "revenue": 2921666762897,
+      "revenue": null,
       "operating_profit": 306196731004,
       "net_income": 368849816924,
       "assets": 11232623887656,
@@ -6513,17 +6409,11 @@
       "fcf_financing": 924007464429
     },
     "quarter_values": {
-      "revenue": 1100436676483,
+      "revenue": null,
       "operating_profit": 120214821162,
       "net_income": 143728038530
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs-full_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20201116001873"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -6591,15 +6481,17 @@
         "rcept_no": "20201116001873"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 10.48020721912818,
-      "net_margin": 12.624636786375468,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 50.37349826738464,
       "current_ratio": 154.28355947799176,
       "equity_ratio": 66.50107974623715,
-      "revenue_yoy": 31.45722984811421,
+      "revenue_yoy": null,
       "operating_profit_yoy": 140.7125503642142,
       "roa": null,
       "roe": null
@@ -6615,7 +6507,7 @@
     "report_name": "분기보고서 (2020.09)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20201116001873",
     "values": {
-      "revenue": 1271172417396,
+      "revenue": null,
       "operating_profit": 193551323084,
       "net_income": 166905868578,
       "assets": 6997708199411,
@@ -6629,17 +6521,11 @@
       "fcf_financing": 16057605042
     },
     "quarter_values": {
-      "revenue": 449468771645,
+      "revenue": null,
       "operating_profit": 72385109600,
       "net_income": 77061596758
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs-full_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20201116001873"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -6707,15 +6593,17 @@
         "rcept_no": "20201116001873"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 15.226205386086836,
-      "net_margin": 13.130073174487777,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 26.58818487957772,
       "current_ratio": 109.08977286463318,
       "equity_ratio": 78.99631398864686,
-      "revenue_yoy": 17.487379875335463,
+      "revenue_yoy": null,
       "operating_profit_yoy": 49.4304988752404,
       "roa": null,
       "roe": null
@@ -6731,7 +6619,7 @@
     "report_name": "[기재정정]사업보고서 (2021.12)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320000386",
     "values": {
-      "revenue": 5910512880994,
+      "revenue": null,
       "operating_profit": 587884339202,
       "net_income": 1640484195406,
       "assets": 22784559108590,
@@ -6746,12 +6634,6 @@
     },
     "quarter_values": {},
     "trace": {
-      "revenue": {
-        "account_id": "ifrs-full_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_amount",
-        "rcept_no": "20240320000386"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -6819,15 +6701,17 @@
         "rcept_no": "20240320000386"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 9.94641837415525,
-      "net_margin": 27.755361141013395,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 67.92451972056287,
       "current_ratio": 143.2195789805593,
       "equity_ratio": 59.550564840921616,
-      "revenue_yoy": 45.171778191639824,
+      "revenue_yoy": null,
       "operating_profit_yoy": 30.49029878175078,
       "roa": 9.44470544466569,
       "roe": 15.638483452833468
@@ -6843,7 +6727,7 @@
     "report_name": "[기재정정]사업보고서 (2021.12)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320000386",
     "values": {
-      "revenue": 2132915884804,
+      "revenue": null,
       "operating_profit": 397366297001,
       "net_income": 503123622467,
       "assets": 10029502863845,
@@ -6858,12 +6742,6 @@
     },
     "quarter_values": {},
     "trace": {
-      "revenue": {
-        "account_id": "ifrs-full_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_amount",
-        "rcept_no": "20240320000386"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -6931,15 +6809,17 @@
         "rcept_no": "20240320000386"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 18.630190708974684,
-      "net_margin": 23.588535584150968,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 53.37184938712202,
       "current_ratio": 104.04959482494303,
       "equity_ratio": 65.20101335388642,
-      "revenue_yoy": 19.880954832256204,
+      "revenue_yoy": null,
       "operating_profit_yoy": 33.94841366011136,
       "roa": 5.791347933941684,
       "roe": 8.489092793863692
@@ -6955,7 +6835,7 @@
     "report_name": "반기보고서 (2021.06)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20210817002037",
     "values": {
-      "revenue": 2610159614218,
+      "revenue": null,
       "operating_profit": 320154180038,
       "net_income": 555797905049,
       "assets": 15150086262684,
@@ -6969,17 +6849,11 @@
       "fcf_financing": 1415439398436
     },
     "quarter_values": {
-      "revenue": 1352195044732,
+      "revenue": null,
       "operating_profit": 162609439992,
       "net_income": 315924132162
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs-full_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20210817002037"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -7047,15 +6921,17 @@
         "rcept_no": "20210817002037"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 12.265693572686654,
-      "net_margin": 21.293636681123665,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 61.864064848893975,
       "current_ratio": 197.27975731317687,
       "equity_ratio": 61.78023521981464,
-      "revenue_yoy": 43.31849850764333,
+      "revenue_yoy": null,
       "operating_profit_yoy": 72.14264565300215,
       "roa": null,
       "roe": null
@@ -7071,7 +6947,7 @@
     "report_name": "반기보고서 (2021.06)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20210817002037",
     "values": {
-      "revenue": 1012243848734,
+      "revenue": null,
       "operating_profit": 174045116395,
       "net_income": 176773471534,
       "assets": 7684038000571,
@@ -7085,17 +6961,11 @@
       "fcf_financing": -43203215875
     },
     "quarter_values": {
-      "revenue": 521392958387,
+      "revenue": null,
       "operating_profit": 97324081172,
       "net_income": 98169184281
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs-full_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20210817002037"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -7163,15 +7033,17 @@
         "rcept_no": "20210817002037"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 17.1939910143861,
-      "net_margin": 17.463526378064756,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 35.28131607096389,
       "current_ratio": 132.46489964403744,
       "equity_ratio": 73.92003781774527,
-      "revenue_yoy": 23.18843344170085,
+      "revenue_yoy": null,
       "operating_profit_yoy": 43.64162367587947,
       "roa": null,
       "roe": null
@@ -7187,7 +7059,7 @@
     "report_name": "분기보고서 (2021.03)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20210517002106",
     "values": {
-      "revenue": 1257964569486,
+      "revenue": null,
       "operating_profit": 157544740046,
       "net_income": 239873772887,
       "assets": 13514183649141,
@@ -7201,17 +7073,11 @@
       "fcf_financing": 622467501714
     },
     "quarter_values": {
-      "revenue": 1257964569486,
+      "revenue": null,
       "operating_profit": 157544740046,
       "net_income": 239873772887
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs-full_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20210517002106"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -7279,15 +7145,17 @@
         "rcept_no": "20210517002106"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 12.523781978245399,
-      "net_margin": 19.068404524700693,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 71.55966721468275,
       "current_ratio": 171.67655122456236,
       "equity_ratio": 58.28875843811476,
-      "revenue_yoy": 44.86386945896006,
+      "revenue_yoy": null,
       "operating_profit_yoy": 78.6004460433316,
       "roa": null,
       "roe": null
@@ -7303,7 +7171,7 @@
     "report_name": "분기보고서 (2021.03)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20210517002106",
     "values": {
-      "revenue": 490850890347,
+      "revenue": null,
       "operating_profit": 76721035223,
       "net_income": 78604287253,
       "assets": 7560446619296,
@@ -7317,17 +7185,11 @@
       "fcf_financing": 4106994607
     },
     "quarter_values": {
-      "revenue": 490850890347,
+      "revenue": null,
       "operating_profit": 76721035223,
       "net_income": 78604287253
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs-full_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20210517002106"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -7395,15 +7257,17 @@
         "rcept_no": "20210517002106"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 15.63021209328217,
-      "net_margin": 16.013882993556724,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 37.07456663667758,
       "current_ratio": 133.51202090422606,
       "equity_ratio": 72.95299372716939,
-      "revenue_yoy": 20.718032394575502,
+      "revenue_yoy": null,
       "operating_profit_yoy": 17.229325575768726,
       "roa": null,
       "roe": null
@@ -7419,7 +7283,7 @@
     "report_name": "분기보고서 (2021.09)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20211115002331",
     "values": {
-      "revenue": 4350939111659,
+      "revenue": null,
       "operating_profit": 488328930526,
       "net_income": 1422077003968,
       "assets": 18231233319577,
@@ -7433,17 +7297,11 @@
       "fcf_financing": 2500281525819
     },
     "quarter_values": {
-      "revenue": 1740779497441,
+      "revenue": null,
       "operating_profit": 168174750488,
       "net_income": 866279098919
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs-full_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20211115002331"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -7511,15 +7369,17 @@
         "rcept_no": "20211115002331"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 11.22352940351311,
-      "net_margin": 32.684369224044744,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 67.17976330759782,
       "current_ratio": 157.34382629118699,
       "equity_ratio": 59.81585212320688,
-      "revenue_yoy": 48.919759327542025,
+      "revenue_yoy": null,
       "operating_profit_yoy": 59.4820849082222,
       "roa": null,
       "roe": null
@@ -7535,7 +7395,7 @@
     "report_name": "분기보고서 (2021.09)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20211115002331",
     "values": {
-      "revenue": 1480596966891,
+      "revenue": null,
       "operating_profit": 270510486431,
       "net_income": 397228693641,
       "assets": 8700922381295,
@@ -7549,17 +7409,11 @@
       "fcf_financing": -30961620200
     },
     "quarter_values": {
-      "revenue": 468353118157,
+      "revenue": null,
       "operating_profit": 96465370036,
       "net_income": 220455222107
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs-full_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20211115002331"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -7627,15 +7481,17 @@
         "rcept_no": "20211115002331"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 18.270366107734617,
-      "net_margin": 26.828954977201676,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 38.52195726828612,
       "current_ratio": 140.39781578785522,
       "equity_ratio": 72.19072121997404,
-      "revenue_yoy": 16.474912972388655,
+      "revenue_yoy": null,
       "operating_profit_yoy": 39.7616312411361,
       "roa": null,
       "roe": null
@@ -7651,7 +7507,7 @@
     "report_name": "[기재정정]사업보고서 (2022.12)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320000393",
     "values": {
-      "revenue": 6799047881222,
+      "revenue": null,
       "operating_profit": 569355650551,
       "net_income": 1066994242805,
       "assets": 22963651561449,
@@ -7666,12 +7522,6 @@
     },
     "quarter_values": {},
     "trace": {
-      "revenue": {
-        "account_id": "ifrs-full_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_amount",
-        "rcept_no": "20240320000393"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -7739,15 +7589,17 @@
         "rcept_no": "20240320000393"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 8.374049727219587,
-      "net_margin": 15.69328914055578,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 69.90375001768085,
       "current_ratio": 148.85617994019915,
       "equity_ratio": 58.856852770815,
-      "revenue_yoy": 15.033128564615716,
+      "revenue_yoy": null,
       "operating_profit_yoy": -3.1517574827985784,
       "roa": 4.664638145088311,
       "roe": 7.879143429153587
@@ -7763,7 +7615,7 @@
     "report_name": "[기재정정]사업보고서 (2022.12)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240320000393",
     "values": {
-      "revenue": 2456590805969,
+      "revenue": null,
       "operating_profit": 543978112016,
       "net_income": 1611790174060,
       "assets": 10791496254634,
@@ -7778,12 +7630,6 @@
     },
     "quarter_values": {},
     "trace": {
-      "revenue": {
-        "account_id": "ifrs-full_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_amount",
-        "rcept_no": "20240320000393"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -7851,15 +7697,17 @@
         "rcept_no": "20240320000393"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 22.143619144639285,
-      "net_margin": 65.61085265578981,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 52.619413770536205,
       "current_ratio": 105.6315210267081,
       "equity_ratio": 65.52246370854911,
-      "revenue_yoy": 15.175231403686773,
+      "revenue_yoy": null,
       "operating_profit_yoy": 36.895885766233214,
       "roa": 15.482351878392889,
       "roe": 23.685047314256817
@@ -7875,7 +7723,7 @@
     "report_name": "반기보고서 (2022.06)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220816002580",
     "values": {
-      "revenue": 3474017956597,
+      "revenue": null,
       "operating_profit": 329677382255,
       "net_income": 1423336392973,
       "assets": 24776951350731,
@@ -7889,17 +7737,11 @@
       "fcf_financing": 681466023355
     },
     "quarter_values": {
-      "revenue": 1822314721770,
+      "revenue": null,
       "operating_profit": 171021545573,
       "net_income": 101202767716
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs-full_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20220816002580"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -7967,15 +7809,17 @@
         "rcept_no": "20220816002580"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 9.489800754453725,
-      "net_margin": 40.970899136262375,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 67.17290280692502,
       "current_ratio": 152.87098658804868,
       "equity_ratio": 59.818306867288285,
-      "revenue_yoy": 33.09599679933024,
+      "revenue_yoy": null,
       "operating_profit_yoy": 2.9745675086515044,
       "roa": null,
       "roe": null
@@ -7991,7 +7835,7 @@
     "report_name": "반기보고서 (2022.06)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220816002580",
     "values": {
-      "revenue": 1192618443653,
+      "revenue": null,
       "operating_profit": 260125495495,
       "net_income": 1250652927712,
       "assets": 11780981814036,
@@ -8005,17 +7849,11 @@
       "fcf_financing": 22689167229
     },
     "quarter_values": {
-      "revenue": 596388857846,
+      "revenue": null,
       "operating_profit": 137029719556,
       "net_income": 106224138032
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs-full_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20220816002580"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -8083,15 +7921,17 @@
         "rcept_no": "20220816002580"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 21.81129236088564,
-      "net_margin": 104.86614007756243,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 51.86803485083094,
       "current_ratio": 98.37012284577644,
       "equity_ratio": 65.84664119623515,
-      "revenue_yoy": 17.81928288767496,
+      "revenue_yoy": null,
       "operating_profit_yoy": 49.45865812439016,
       "roa": null,
       "roe": null
@@ -8107,7 +7947,7 @@
     "report_name": "분기보고서 (2022.03)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220516002455",
     "values": {
-      "revenue": 1651703234827,
+      "revenue": null,
       "operating_profit": 158655836682,
       "net_income": 1322133625257,
       "assets": 24443792007317,
@@ -8121,17 +7961,11 @@
       "fcf_financing": 60133688287
     },
     "quarter_values": {
-      "revenue": 1651703234827,
+      "revenue": null,
       "operating_profit": 158655836682,
       "net_income": 1322133625257
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs-full_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20220516002455"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -8199,15 +8033,17 @@
         "rcept_no": "20220516002455"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 9.60558975345336,
-      "net_margin": 80.04668135165824,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 64.09891660082519,
       "current_ratio": 145.21054026837044,
       "equity_ratio": 60.938854485707886,
-      "revenue_yoy": 31.299662557418472,
+      "revenue_yoy": null,
       "operating_profit_yoy": 0.7052578433755174,
       "roa": null,
       "roe": null
@@ -8223,7 +8059,7 @@
     "report_name": "분기보고서 (2022.03)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20220516002455",
     "values": {
-      "revenue": 596229585807,
+      "revenue": null,
       "operating_profit": 123095775939,
       "net_income": 1144428789680,
       "assets": 11741595769921,
@@ -8237,17 +8073,11 @@
       "fcf_financing": 1736328748
     },
     "quarter_values": {
-      "revenue": 596229585807,
+      "revenue": null,
       "operating_profit": 123095775939,
       "net_income": 1144428789680
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs-full_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20220516002455"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -8315,15 +8145,17 @@
         "rcept_no": "20220516002455"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 20.645700728250375,
-      "net_margin": 191.944314224362,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 51.97011880672893,
       "current_ratio": 103.82546024550317,
       "equity_ratio": 65.80240956919764,
-      "revenue_yoy": 21.468575800179156,
+      "revenue_yoy": null,
       "operating_profit_yoy": 60.44592670211708,
       "roa": null,
       "roe": null
@@ -8339,7 +8171,7 @@
     "report_name": "분기보고서 (2022.09)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20221114002641",
     "values": {
-      "revenue": 5332714665829,
+      "revenue": null,
       "operating_profit": 480009098456,
       "net_income": 1560497474410,
       "assets": 25445219089660,
@@ -8353,17 +8185,11 @@
       "fcf_financing": 798021673668
     },
     "quarter_values": {
-      "revenue": 1858696709232,
+      "revenue": null,
       "operating_profit": 150331716201,
       "net_income": 137161081437
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs-full_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20221114002641"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -8431,15 +8257,17 @@
         "rcept_no": "20221114002641"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 9.001214738373404,
-      "net_margin": 29.262722125550138,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 66.56104678902663,
       "current_ratio": 157.1257007271382,
       "equity_ratio": 60.03804726723667,
-      "revenue_yoy": 22.564681531377538,
+      "revenue_yoy": null,
       "operating_profit_yoy": -1.7037352386716775,
       "roa": null,
       "roe": null
@@ -8455,7 +8283,7 @@
     "report_name": "분기보고서 (2022.09)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20221114002641",
     "values": {
-      "revenue": 1806051094353,
+      "revenue": null,
       "operating_profit": 380889464185,
       "net_income": 1327559685291,
       "assets": 12021704918461,
@@ -8469,17 +8297,11 @@
       "fcf_financing": 20063655000
     },
     "quarter_values": {
-      "revenue": 613432650700,
+      "revenue": null,
       "operating_profit": 120763968690,
       "net_income": 76906757579
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs-full_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20221114002641"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -8547,15 +8369,17 @@
         "rcept_no": "20221114002641"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 21.089628381828803,
-      "net_margin": 73.506208625099,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 53.754199022227624,
       "current_ratio": 100.56933293754275,
       "equity_ratio": 65.03887414843442,
-      "revenue_yoy": 21.981277467115024,
+      "revenue_yoy": null,
       "operating_profit_yoy": 40.80395522195577,
       "roa": null,
       "roe": null
@@ -8663,7 +8487,7 @@
       "debt_ratio": 81.69202047120305,
       "current_ratio": 132.16472539392169,
       "equity_ratio": 55.038190307234395,
-      "revenue_yoy": 11.147941436673214,
+      "revenue_yoy": null,
       "operating_profit_yoy": -19.056244506048216,
       "roa": -7.546873260123611,
       "roe": -13.272815873875988
@@ -8775,7 +8599,7 @@
       "debt_ratio": 58.07595641443577,
       "current_ratio": 72.58522326375919,
       "equity_ratio": 63.26072748079722,
-      "revenue_yoy": 1.7507473584732924,
+      "revenue_yoy": null,
       "operating_profit_yoy": -2.0141347686573385,
       "roa": 0.9221270374001969,
       "roe": 1.4327012455015993
@@ -8791,7 +8615,7 @@
     "report_name": "[기재정정]반기보고서 (2023.06)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230921000228",
     "values": {
-      "revenue": 3782812962240,
+      "revenue": null,
       "operating_profit": 184597703497,
       "net_income": 119854133420,
       "assets": 26051901583875,
@@ -8805,17 +8629,11 @@
       "fcf_financing": 969324950656
     },
     "quarter_values": {
-      "revenue": 2042475603587,
+      "revenue": null,
       "operating_profit": 113469781807,
       "net_income": 56026339557
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs-full_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20230921000228"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -8883,15 +8701,17 @@
         "rcept_no": "20230921000228"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 4.87990565062699,
-      "net_margin": 3.1683864525257457,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 68.6555228327336,
       "current_ratio": 131.83130966494824,
       "equity_ratio": 59.29245501149486,
-      "revenue_yoy": 8.888699180630667,
+      "revenue_yoy": null,
       "operating_profit_yoy": -44.00656113126477,
       "roa": null,
       "roe": null
@@ -8907,7 +8727,7 @@
     "report_name": "[기재정정]반기보고서 (2023.06)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230921000228",
     "values": {
-      "revenue": 1275220614172,
+      "revenue": null,
       "operating_profit": 246593053917,
       "net_income": 216173554476,
       "assets": 11285481460664,
@@ -8921,17 +8741,11 @@
       "fcf_financing": 211955256319
     },
     "quarter_values": {
-      "revenue": 634560113992,
+      "revenue": null,
       "operating_profit": 117204495006,
       "net_income": 92897361083
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs-full_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20230921000228"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -8999,15 +8813,17 @@
         "rcept_no": "20230921000228"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 19.337285735230427,
-      "net_margin": 16.951855394555505,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 54.5119244972913,
       "current_ratio": 75.32202139909171,
       "equity_ratio": 64.71992393166592,
-      "revenue_yoy": 6.926118823551719,
+      "revenue_yoy": null,
       "operating_profit_yoy": -5.202274214701152,
       "roa": null,
       "roe": null
@@ -9023,7 +8839,7 @@
     "report_name": "[기재정정]분기보고서 (2023.03)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230629000567",
     "values": {
-      "revenue": 1740337358653,
+      "revenue": null,
       "operating_profit": 71127921690,
       "net_income": 63827793863,
       "assets": 25586377571171,
@@ -9037,17 +8853,11 @@
       "fcf_financing": 920278267010
     },
     "quarter_values": {
-      "revenue": 1740337358653,
+      "revenue": null,
       "operating_profit": 71127921690,
       "net_income": 63827793863
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs-full_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20230629000567"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -9115,15 +8925,17 @@
         "rcept_no": "20230629000567"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 4.087019182594124,
-      "net_margin": 3.6675529342426993,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 67.20644702941459,
       "current_ratio": 134.24871773762374,
       "equity_ratio": 59.806306381480745,
-      "revenue_yoy": 5.366225721249718,
+      "revenue_yoy": null,
       "operating_profit_yoy": -55.16841789277225,
       "roa": null,
       "roe": null
@@ -9139,7 +8951,7 @@
     "report_name": "[기재정정]분기보고서 (2023.03)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230629000567",
     "values": {
-      "revenue": 640660500180,
+      "revenue": null,
       "operating_profit": 129388558911,
       "net_income": 123276193393,
       "assets": 10974360701547,
@@ -9153,17 +8965,11 @@
       "fcf_financing": 70181477187
     },
     "quarter_values": {
-      "revenue": 640660500180,
+      "revenue": null,
       "operating_profit": 129388558911,
       "net_income": 123276193393
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs-full_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20230629000567"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -9231,15 +9037,17 @@
         "rcept_no": "20230629000567"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 20.19611929791941,
-      "net_margin": 19.24204681861365,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 52.39530870654533,
       "current_ratio": 78.19101652726482,
       "equity_ratio": 65.61881782894085,
-      "revenue_yoy": 7.451980819244741,
+      "revenue_yoy": null,
       "operating_profit_yoy": 5.112103095331544,
       "roa": null,
       "roe": null
@@ -9255,7 +9063,7 @@
     "report_name": "[기재정정]분기보고서 (2023.09)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231226000387",
     "values": {
-      "revenue": 5943744316405,
+      "revenue": null,
       "operating_profit": 324894046533,
       "net_income": 169346879514,
       "assets": 26785564868322,
@@ -9263,23 +9071,17 @@
       "equity": 15660696103271,
       "current_assets": 8695272771351,
       "current_liabilities": 6696232633124,
-      "cash": null,
+      "cash": 5240754680505,
       "ocf": 844718150609,
       "icf": -1603706608611,
       "fcf_financing": 1198196633139
     },
     "quarter_values": {
-      "revenue": 2160931354165,
+      "revenue": null,
       "operating_profit": 140296343036,
       "net_income": 49492746094
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs-full_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20231226000387"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -9322,6 +9124,20 @@
         "field": "thstrm_amount",
         "rcept_no": "20231226000387"
       },
+      "cash": {
+        "source": "segment_sum_reconciled_to_cash_flow",
+        "rows": [
+          {
+            "account_nm": "현금및현금성자산, 금융업",
+            "amount_krw": 132329186055
+          },
+          {
+            "account_nm": "현금및현금성자산, 비금융업",
+            "amount_krw": 5108425494450
+          }
+        ],
+        "cash_flow_ending_krw": 5240754680505
+      },
       "ocf": {
         "account_id": "ifrs-full_CashFlowsFromUsedInOperatingActivities",
         "account_nm": "영업활동현금흐름",
@@ -9341,15 +9157,17 @@
         "rcept_no": "20231226000387"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 5.466151120200072,
-      "net_margin": 2.8491615806318427,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 71.0368727653644,
       "current_ratio": 129.85320623925793,
       "equity_ratio": 58.46692492862883,
-      "revenue_yoy": 11.458135093770515,
+      "revenue_yoy": null,
       "operating_profit_yoy": -32.31502328225526,
       "roa": null,
       "roe": null
@@ -9365,7 +9183,7 @@
     "report_name": "[기재정정]분기보고서 (2023.09)",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20231226000387",
     "values": {
-      "revenue": 1930837789995,
+      "revenue": null,
       "operating_profit": 382006324626,
       "net_income": 316322408813,
       "assets": 11598655250402,
@@ -9379,17 +9197,11 @@
       "fcf_financing": 213451715097
     },
     "quarter_values": {
-      "revenue": 655617175823,
+      "revenue": null,
       "operating_profit": 135413270709,
       "net_income": 100148854337
     },
     "trace": {
-      "revenue": {
-        "account_id": "ifrs-full_GrossProfit",
-        "account_nm": "영업수익",
-        "field": "thstrm_add_amount",
-        "rcept_no": "20231226000387"
-      },
       "operating_profit": {
         "account_id": "dart_OperatingIncomeLoss",
         "account_nm": "영업이익(손실)",
@@ -9457,15 +9269,17 @@
         "rcept_no": "20231226000387"
       }
     },
-    "warnings": [],
+    "warnings": [
+      "revenue: excluded mismatched account ID"
+    ],
     "status": "api",
     "ratios": {
-      "operating_margin": 19.78448560544225,
-      "net_margin": 16.382650601313284,
+      "operating_margin": null,
+      "net_margin": null,
       "debt_ratio": 56.345924544831206,
       "current_ratio": 78.67898720450849,
       "equity_ratio": 63.96073341286592,
-      "revenue_yoy": 6.909366851921961,
+      "revenue_yoy": null,
       "operating_profit_yoy": 0.2932242936647622,
       "roa": null,
       "roe": null
@@ -9801,7 +9615,7 @@
       "debt_ratio": 83.12061254791786,
       "current_ratio": 124.33521805564666,
       "equity_ratio": 54.60881689320072,
-      "revenue_yoy": 5.562933097632983,
+      "revenue_yoy": null,
       "operating_profit_yoy": 37.73644624681482,
       "roa": null,
       "roe": null
@@ -9917,7 +9731,7 @@
       "debt_ratio": 58.77046305041318,
       "current_ratio": 78.72097846900631,
       "equity_ratio": 62.98400727611896,
-      "revenue_yoy": 0.7516197588464557,
+      "revenue_yoy": null,
       "operating_profit_yoy": 8.561866737376288,
       "roa": null,
       "roe": null
@@ -10029,7 +9843,7 @@
       "debt_ratio": 83.62133548865064,
       "current_ratio": 131.56835227169444,
       "equity_ratio": 54.45990234951801,
-      "revenue_yoy": 14.250844649853335,
+      "revenue_yoy": null,
       "operating_profit_yoy": 69.12357644200978,
       "roa": null,
       "roe": null
@@ -10145,7 +9959,7 @@
       "debt_ratio": 58.18523570443721,
       "current_ratio": 75.77492198801723,
       "equity_ratio": 63.21702499899927,
-      "revenue_yoy": -0.03043537036312438,
+      "revenue_yoy": null,
       "operating_profit_yoy": 6.443706619945355,
       "roa": null,
       "roe": null
@@ -10169,7 +9983,7 @@
       "equity": 14175705320650,
       "current_assets": 9127972859072,
       "current_liabilities": 7162616063389,
-      "cash": null,
+      "cash": 5901333080530,
       "ocf": 980349915610,
       "icf": -20812765577,
       "fcf_financing": -441835126160
@@ -10228,6 +10042,20 @@
         "field": "thstrm_amount",
         "rcept_no": "20241226000456"
       },
+      "cash": {
+        "source": "segment_sum_reconciled_to_cash_flow",
+        "rows": [
+          {
+            "account_nm": "현금및현금성자산, 금융업",
+            "amount_krw": 127119663147
+          },
+          {
+            "account_nm": "현금및현금성자산, 비금융업",
+            "amount_krw": 5774213417383
+          }
+        ],
+        "cash_flow_ending_krw": 5901333080530
+      },
       "ocf": {
         "account_id": "ifrs-full_CashFlowsFromUsedInOperatingActivities",
         "account_nm": "영업활동현금흐름",
@@ -10255,7 +10083,7 @@
       "debt_ratio": 81.26980547980767,
       "current_ratio": 127.43909178280161,
       "equity_ratio": 55.16638567317235,
-      "revenue_yoy": -0.4895568048357668,
+      "revenue_yoy": null,
       "operating_profit_yoy": 18.43370655882943,
       "roa": null,
       "roe": null
@@ -10371,7 +10199,7 @@
       "debt_ratio": 58.74775048453803,
       "current_ratio": 81.8814208355764,
       "equity_ratio": 62.99301860642112,
-      "revenue_yoy": -1.4135402517717832,
+      "revenue_yoy": null,
       "operating_profit_yoy": -3.304334146655352,
       "roa": null,
       "roe": null
