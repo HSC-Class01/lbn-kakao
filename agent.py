@@ -115,10 +115,17 @@ def extract(rows,code):
    nonfin=[r for r in hits if norm(r.get('account_nm'))=='현금및현금성자산,비금융업']
    ending=[r for r in rows if r.get('sj_div')=='CF' and r.get('account_id')=='dart_CashAndCashEquivalentsAtEndOfPeriodCf' and r.get('currency','KRW')=='KRW']
    totals={number(r.get(field)) for r in ending};totals.discard(None)
+   components=None;source=None
    if len(fin)==1 and len(nonfin)==1:
-    total=number(fin[0].get(field))+number(nonfin[0].get(field)) if number(fin[0].get(field)) is not None and number(nonfin[0].get(field)) is not None else None
+    components=[fin[0],nonfin[0]];source='segment_sum_reconciled_to_cash_flow'
+   else:
+    repeated=[r for r in hits if norm(r.get('account_nm'))=='현금및현금성자산']
+    if len(repeated)==2:components=repeated;source='duplicate_rows_reconciled_to_cash_flow'
+   if components:
+    amounts=[number(r.get(field)) for r in components]
+    total=sum(amounts) if all(v is not None for v in amounts) else None
     if total is not None and total in totals:
-     vals[metric]=total;trace[metric]={'source':'segment_sum_reconciled_to_cash_flow','rows':[{'account_nm':r.get('account_nm'),'amount_krw':number(r.get(field))} for r in (fin[0],nonfin[0])],'cash_flow_ending_krw':total};aggregated=True
+     vals[metric]=total;trace[metric]={'source':source,'rows':[{'account_id':r.get('account_id'),'account_nm':r.get('account_nm'),'amount_krw':number(r.get(field))} for r in components],'cash_flow_ending_krw':total};aggregated=True
   if len(values)>1 and not aggregated:warnings.append(metric+': conflicting accounts')
   if vals[metric] is not None and not aggregated:
    chosen=next(r for r in hits if number(r.get(field))==vals[metric])
