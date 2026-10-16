@@ -6,10 +6,10 @@ from zoneinfo import ZoneInfo
 import xml.etree.ElementTree as ET
 import requests
 from bs4 import BeautifulSoup
-ROOT=Path(__file__).resolve().parents[1]
+ROOT=Path(__file__).resolve().parent
 BASE='https://opendart.fss.or.kr/api/'
 CODES={3:'11013',6:'11012',9:'11014',12:'11011'}
-METRICS=json.loads((ROOT/'config/metrics.json').read_text(encoding='utf-8'))
+METRICS=json.loads((ROOT/'metrics.json').read_text(encoding='utf-8'))
 def load(p,default):
  q=ROOT/p
  return json.loads(q.read_text(encoding='utf-8')) if q.exists() else default
@@ -134,7 +134,7 @@ def enrich(records):
 
 def apply_overrides(records):
  idx={(r['year'],r['reprt_code'],r['fs_div']):r for r in records}
- with (ROOT/'data/overrides.csv').open(encoding='utf-8-sig',newline='') as f:
+ with (ROOT/'overrides.csv').open(encoding='utf-8-sig',newline='') as f:
   for row in csv.DictReader(f):
    if row['reviewed'].lower()!='true':continue
    key=(int(row['year']),row['reprt_code'],row['fs_div']);metric=row['metric']
@@ -196,12 +196,12 @@ def collect(full=False):
  save('data/status.json',{'updated_at':datetime.now(timezone.utc).isoformat(),'corp_code':corp,'stock_code':'035720','reports':len(reports),'periods':len(latest),'records':len(records),'legacy_review_required':sum(r['status']=='legacy_review_required' for r in records)})
 
 def build():
- records=load('data/financials.json',[]);peers=load('config/peers.json',[]);status=load('data/status.json',{'updated_at':None})
- template=(ROOT/'web/template.html').read_text(encoding='utf-8')
+ records=load('data/financials.json',[]);peers=load('peers.json',[]);status=load('data/status.json',{'updated_at':None})
+ template=(ROOT/'template.html').read_text(encoding='utf-8')
  payload=json.dumps({'records':records,'peers':peers,'status':status},ensure_ascii=False,allow_nan=False).replace('<','\\u003c')
  html=template.replace('__PAYLOAD__',payload)
  (ROOT/'docs').mkdir(exist_ok=True);(ROOT/'docs/index.html').write_text(html,encoding='utf-8')
- (ROOT/'docs/dashboard-badge.svg').write_text((ROOT/'assets/dashboard-badge.svg').read_text(encoding='utf-8'),encoding='utf-8')
+ (ROOT/'docs/dashboard-badge.svg').write_text((ROOT/'dashboard-badge.svg').read_text(encoding='utf-8'),encoding='utf-8')
 
 def main():
  p=argparse.ArgumentParser();p.add_argument('--build-only',action='store_true');p.add_argument('--full',action='store_true');a=p.parse_args()
