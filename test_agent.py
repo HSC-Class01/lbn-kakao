@@ -6,6 +6,12 @@ import io,zipfile
 class TestAgent(unittest.TestCase):
  def test_number(self):
   self.assertEqual(number('(1,234)'),-1234);self.assertIsNone(number('-'));self.assertIsNone(number('1억원'))
+ def test_duplicate_cash_reconciles(self):
+  rows=[
+   dict(sj_div='BS',account_id='-표준계정코드 미사용-',account_nm='현금및현금성자산',thstrm_amount='10',currency='KRW'),
+   dict(sj_div='BS',account_id='-표준계정코드 미사용-',account_nm='현금및현금성자산',thstrm_amount='90',currency='KRW'),
+   dict(sj_div='CF',account_id='dart_CashAndCashEquivalentsAtEndOfPeriodCf',account_nm='기말현금및현금성자산',thstrm_amount='100',currency='KRW')]
+  v,q,t,w=extract(rows,'11011');self.assertEqual(v['cash'],100);self.assertEqual(t['cash']['source'],'duplicate_rows_reconciled_to_cash_flow')
  def test_ytd(self):
   rows=[dict(sj_div='IS',account_id='ifrs-full_Revenue',account_nm='매출액',thstrm_amount='30',thstrm_add_amount='90',currency='KRW')]
   v,q,t,w=extract(rows,'11014');self.assertEqual(v['revenue'],90);self.assertEqual(q['revenue'],30)
