@@ -11,9 +11,10 @@ on:
       - 'metrics.json'
       - 'peers.json'
       - 'template.html'
+      - 'overrides.csv'
+      - 'dashboard-badge.svg'
   schedule:
     - cron: '15 0 1 * *'
-    - cron: '55 11 16 10 *' # Temporary verification run; remove after validation
   workflow_dispatch:
 
 permissions:
