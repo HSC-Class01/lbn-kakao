@@ -18,9 +18,12 @@ class TestAgent(unittest.TestCase):
  def test_ambiguous(self):
   rows=[dict(sj_div='BS',account_id='ifrs-full_Assets',thstrm_amount=str(n)) for n in [1,2]]
   v,q,t,w=extract(rows,'11011');self.assertIsNone(v['assets']);self.assertTrue(w)
- def test_revenue_excludes_gross_profit_alias(self):
-  rows=[dict(sj_div='CIS',account_id='ifrs-full_GrossProfit',account_nm='영업수익',thstrm_amount='100',currency='KRW')]
+ def test_revenue_rejects_actual_gross_profit_label(self):
+  rows=[dict(sj_div='CIS',account_id='ifrs-full_GrossProfit',account_nm='매출총이익',thstrm_amount='100',currency='KRW')]
   v,q,t,w=extract(rows,'11011');self.assertIsNone(v['revenue']);self.assertTrue(any('excluded mismatched' in x for x in w))
+ def test_revenue_accepts_mislabelled_revenue_account_id(self):
+  rows=[dict(sj_div='CIS',account_id='ifrs_GrossProfit',account_nm='영업수익',thstrm_amount='1972326479100',currency='KRW')]
+  v,q,t,w=extract(rows,'11011');self.assertEqual(v['revenue'],1972326479100);self.assertFalse(any('excluded mismatched' in x for x in w))
  def test_revenue_accepts_unstandardized_alias(self):
   rows=[dict(sj_div='CIS',account_id='-표준계정코드 미사용-',account_nm='영업수익',thstrm_amount='100',currency='KRW')]
   v,q,t,w=extract(rows,'11011');self.assertEqual(v['revenue'],100)
