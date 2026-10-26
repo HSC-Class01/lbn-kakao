@@ -99,8 +99,11 @@ def extract(rows,code):
   sj=['IS','CIS'] if cfg['statement']=='IS' else [cfg['statement']]
   eligible=[r for r in rows if r.get('sj_div') in sj and r.get('currency','KRW')=='KRW']
   excluded_ids=set(cfg.get('exclude_ids',[]))
-  excluded=[r for r in eligible if r.get('account_id') in excluded_ids]
-  eligible=[r for r in eligible if r.get('account_id') not in excluded_ids]
+  # Some DART filings reuse a GrossProfit account ID for a row explicitly named '영업수익'.
+  # Trust a recognized revenue label over the mismatched ID, but still reject rows actually labelled gross profit.
+  revenue_names={norm(x) for x in cfg['names']}
+  excluded=[r for r in eligible if r.get('account_id') in excluded_ids and norm(r.get('account_nm')) not in revenue_names]
+  eligible=[r for r in eligible if r not in excluded]
   hits=[r for r in eligible if r.get('account_id') in cfg['ids']]
   if not hits:hits=[r for r in eligible if norm(r.get('account_nm')) in [norm(x) for x in cfg['names']]]
   if not hits and excluded:warnings.append(metric+': excluded mismatched account ID')
